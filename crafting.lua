@@ -30,36 +30,96 @@ minetest.register_craft({
 	recipe = "myores:slate",
 })
 
---silt
+--Chromium
 
 minetest.register_craft({
-	output = "myores:silt_splitstone 4",
+	output = "myores:chromium_splitblock 4",
 	recipe = {
-    		{"myores:silt","","myores:silt"},
-		{"myores:silt","","myores:silt"},
+    		{"myores:chromium","","myores:chromium"},
+		{"myores:chromium","","myores:chromium"},
 	}
 })
 
 minetest.register_craft({
 	type = "cooking",
-	output = "myores:silt_brick",
-	recipe = "myores:silt",
+	output = "myores:chromium_brick",
+	recipe = "myores:chromium",
 })
 
 minetest.register_craft({
-	output = "myores:silt_tile 4",
+	output = "myores:chromium_block 4",
 	recipe = {
-    		{"myores:silt","myores:silt",""},
-		{"myores:silt","myores:silt",""},
+    		{"myores:chromium","myores:chromium",""},
+		{"myores:chromium","myores:chromium",""},
 	}
 })
 
 minetest.register_craft({
-	output = "myores:silt_tiles 4",
+	output = "myores:chromium_tiles 4",
 	recipe = {
-    		{"myores:silt_tile","myores:silt_tile",""},
-		{"myores:silt_tile","myores:silt_tile",""},
+    		{"myores:chromium_block","myores:chromium_block",""},
+		{"myores:chromium_block","myores:chromium_block",""},
 	}
+})
+
+minetest.register_craft({
+	output = "myores:chromium",
+	recipe = {{"myores:chromium_ingot","myores:chromium_ingot","myores:chromium_ingot"},
+				{"myores:chromium_ingot","myores:chromium_ingot","myores:chromium_ingot"},
+				{"myores:chromium_ingot","myores:chromium_ingot","myores:chromium_ingot"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:chromium_ingot",
+	recipe = "myores:chromium_lump",
+})
+
+--Chromium
+
+minetest.register_craft({
+	output = "myores:manganese_splitblock 4",
+	recipe = {
+    		{"myores:manganese","","myores:manganese"},
+		{"myores:manganese","","myores:manganese"},
+	}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:manganese_brick",
+	recipe = "myores:manganese",
+})
+
+minetest.register_craft({
+	output = "myores:manganese_block 4",
+	recipe = {
+    		{"myores:manganese","myores:manganese",""},
+		{"myores:manganese","myores:manganese",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:manganese_tiles 4",
+	recipe = {
+    		{"myores:manganese_block","myores:manganese_block",""},
+		{"myores:manganese_block","myores:manganese_block",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:manganese",
+	recipe = {{"myores:manganese_ingot","myores:manganese_ingot","myores:manganese_ingot"},
+				{"myores:manganese_ingot","myores:manganese_ingot","myores:manganese_ingot"},
+				{"myores:manganese_ingot","myores:manganese_ingot","myores:manganese_ingot"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:manganese_ingot",
+	recipe = "myores:manganese_lump",
 })
 
 --shale

@@ -50,7 +50,19 @@ local ores_table = {--item, Description, image
 					{"silver_brick",  	  "Silver Brick", 	  "myores_silver_brick.png"},
 					{"silver_splitblock", "Silver Splitblock","myores_silver_splitblock.png"},
 					{"silver_tiles",  	  "Silver Tiles", 	  "myores_silver_tiles.png"},
-					{"stone_with_silver", "Silver", 		  "default_stone.png^myores_mineral_silver.png"},
+					{"stone_with_silver", "Silver In Stone",  "default_stone.png^myores_mineral_silver.png"},
+					{"chromium",  		  "Chromium", 		  "myores_chromium.png"},
+					{"chromium_block",    "Chromium Block",   "myores_chromium_block.png"},
+					{"chromium_brick",    "Chromium Brick",   "myores_chromium_brick.png"},
+					{"chromium_splitblock","Chromium Splitblock","myores_chromium_splitblock.png"},
+					{"chromium_tiles",    "Chromium Tiles",   "myores_chromium_tiles.png"},
+					{"stone_with_chromium","Chromium In Stone","default_stone.png^myores_mineral_chromium.png"},
+					{"manganese",  		  "Manganese", 		  "myores_manganese.png"},
+					{"manganese_block",    "Manganese Block",   "myores_manganese_block.png"},
+					{"manganese_brick",    "Manganese Brick",   "myores_manganese_brick.png"},
+					{"manganese_splitblock","Manganese Splitblock","myores_manganese_splitblock.png"},
+					{"manganese_tiles",    "Manganese Tiles",   "myores_manganese_tiles.png"},
+					{"stone_with_manganese","Manganese In Stone","default_stone.png^myores_mineral_manganese.png"},
 					}
 					
 for i in ipairs(ores_table) do
@@ -87,6 +99,10 @@ minetest.override_item("myores:stone_with_sodium",{
 	drop = "myores:sodium_lump",})
 minetest.override_item("myores:stone_with_silver",{
 	drop = "myores:silver_lump",})
+minetest.override_item("myores:stone_with_chromium",{
+	drop = "myores:chromium_lump",})
+minetest.override_item("myores:stone_with_manganese",{
+	drop = "myores:manganese_lump",})
 
 --Craft Items
 minetest.register_craftitem("myores:calcium_lump",{
@@ -121,4 +137,22 @@ minetest.register_craftitem("myores:silver_lump",{
 minetest.register_craftitem("myores:silver_ingot",{
 	inventory_image = "myores_silver_ingot.png",
 	description = "Silver Ingot",
+})
+
+minetest.register_craftitem("myores:chromium_lump",{
+	inventory_image = "myores_chromium_lump.png",
+	description = "Chromium Lump",
+})
+minetest.register_craftitem("myores:chromium_ingot",{
+	inventory_image = "myores_chromium_ingot.png",
+	description = "Chromium Ingot",
+})
+
+minetest.register_craftitem("myores:manganese_lump",{
+	inventory_image = "myores_manganese_lump.png",
+	description = "Manganese Lump",
+})
+minetest.register_craftitem("myores:manganese_ingot",{
+	inventory_image = "myores_manganese_ingot.png",
+	description = "Manganese Ingot",
 })
