@@ -41,10 +41,16 @@ local ores_table = {--item, Description, image
 					{"slate_tiles",       "Slate Tiles",      "myores_slate_tiles.png"},
 					{"slate_splitstone",  "Slate Splitstone", "myores_slate_splitstone.png"},
 					{"chalk",  			  "Chalk", 			  "myores_chalk.png"},
-					{"stone_with_calcium","Calcium", 		  "default_stone.png^myores_calcium_ore.png"},
+					{"stone_with_calcium","Calcium", 		  "default_stone.png^myores_mineral_calcium.png"},
 					{"calcium_block",  	  "Calcium Block", 	  "myores_calcium_block.png"},
-					{"stone_with_sodium", "Sodium", 		  "default_stone.png^myores_sodium_ore.png"},
+					{"stone_with_sodium", "Sodium", 		  "default_stone.png^myores_mineral_sodium.png"},
 					{"sodium_block",  	  "Sodium Block", 	  "myores_sodium_block.png"},
+					{"silver",  		  "Silver", 		  "myores_silver.png"},
+					{"silver_block",  	  "Silver Block", 	  "myores_silver_block.png"},
+					{"silver_brick",  	  "Silver Brick", 	  "myores_silver_brick.png"},
+					{"silver_splitblock", "Silver Splitblock","myores_silver_splitblock.png"},
+					{"silver_tiles",  	  "Silver Tiles", 	  "myores_silver_tiles.png"},
+					{"stone_with_silver", "Silver", 		  "default_stone.png^myores_mineral_silver.png"},
 					}
 					
 for i in ipairs(ores_table) do
@@ -79,6 +85,8 @@ minetest.override_item("myores:stone_with_calcium",{
 	drop = "myores:calcium_lump",})
 minetest.override_item("myores:stone_with_sodium",{
 	drop = "myores:sodium_lump",})
+minetest.override_item("myores:stone_with_silver",{
+	drop = "myores:silver_lump",})
 
 --Craft Items
 minetest.register_craftitem("myores:calcium_lump",{
@@ -89,6 +97,10 @@ minetest.register_craftitem("myores:calcium_ingot",{
 	inventory_image = "myores_calcium_ingot.png",
 	description = "Calcium Ingot",
 })
+minetest.register_craftitem("myores:calcium",{
+	inventory_image = "myores_calcium.png",
+	description = "Calcium",
+})
 minetest.register_craftitem("myores:sodium_lump",{
 	inventory_image = "myores_sodium_lump.png",
 	description = "Sodium Lump",
@@ -96,4 +108,17 @@ minetest.register_craftitem("myores:sodium_lump",{
 minetest.register_craftitem("myores:sodium_ingot",{
 	inventory_image = "myores_sodium_ingot.png",
 	description = "Sodium Ingot",
+})
+minetest.register_craftitem("myores:salt",{
+	inventory_image = "myores_salt.png",
+	description = "Salt",
+})
+
+minetest.register_craftitem("myores:silver_lump",{
+	inventory_image = "myores_silver_lump.png",
+	description = "Silver Lump",
+})
+minetest.register_craftitem("myores:silver_ingot",{
+	inventory_image = "myores_silver_ingot.png",
+	description = "Silver Ingot",
 })

@@ -440,10 +440,46 @@ minetest.register_ore({
 	ore            = "myores:stone_with_sodium",
 	wherein        = "default:stone",
 	clust_scarcity = 12*12*12,
+	clust_num_ores = 9,
+	clust_size     = 7,
+	height_min     = -31000,
+	height_max     = -1000,
+	flags          = "absheight",
+})
+
+--Silver
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_silver",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -15,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_silver",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -500,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_silver",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
 	clust_num_ores = 5,
 	clust_size     = 3,
 	height_min     = -31000,
 	height_max     = -1000,
 	flags          = "absheight",
 })
-
