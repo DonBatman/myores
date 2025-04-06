@@ -35,43 +35,6 @@ minetest.register_ore({
 	height_max     = -1000,
 })
 
--- Silt
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_silt",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = 0,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_silt",
-	wherein        = "default:stone",
-	clust_scarcity = 24*24*24,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -500,
-	flags          = "absheight",
-})
- 
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_silt",
-	wherein        = "default:stone",
-	clust_scarcity = 12*12*12,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -1000,
-	flags          = "absheight",
-})
-
 -- Shale
 
 minetest.register_ore({
@@ -137,44 +100,6 @@ minetest.register_ore({
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:stone_with_schist",
-	wherein        = "default:stone",
-	clust_scarcity = 12*12*12,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -1000,
-	flags          = "absheight",
-})
-
--- Red Sandstone
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_redsandstone",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -15,
-	flags          = "absheight",
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_redsandstone",
-	wherein        = "default:stone",
-	clust_scarcity = 24*24*24,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -500,
-	flags          = "absheight",
-})
- 
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:stone_with_redsandstone",
 	wherein        = "default:stone",
 	clust_scarcity = 12*12*12,
 	clust_num_ores = 5,
@@ -549,6 +474,80 @@ minetest.register_ore({
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:stone_with_manganese",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -1000,
+	flags          = "absheight",
+})
+
+--Quartz
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_quartz",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -15,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_quartz",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -500,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_quartz",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -1000,
+	flags          = "absheight",
+})
+
+--Chalcopyrite
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_chalcopyrite",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -15,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_chalcopyrite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -500,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_chalcopyrite",
 	wherein        = "default:stone",
 	clust_scarcity = 12*12*12,
 	clust_num_ores = 5,

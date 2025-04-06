@@ -116,7 +116,7 @@ minetest.override_item("myores:stone_with_chromium",{
 minetest.override_item("myores:stone_with_manganese",{
 	drop = "myores:manganese_lump",})
 minetest.override_item("myores:stone_with_quartz",{
-	drop = "myores:quartz_crystal",})
+	drop = "myores:quartz_crystals",})
 minetest.override_item("myores:stone_with_chalcopyrite",{
 	drop = "myores:chalcopyrite_lump",})
 
