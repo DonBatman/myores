@@ -63,6 +63,18 @@ local ores_table = {--item, Description, image
 					{"manganese_splitblock","Manganese Splitblock","myores_manganese_splitblock.png"},
 					{"manganese_tiles",    "Manganese Tiles",   "myores_manganese_tiles.png"},
 					{"stone_with_manganese","Manganese In Stone","default_stone.png^myores_mineral_manganese.png"},
+					{"quartz",  		  "Quartz", 		"myores_quartz.png"},
+					{"quartz_block",      "Quartz Block",   "myores_quartz_block.png"},
+					{"quartz_brick",      "Quartz Brick",   "myores_quartz_brick.png"},
+					{"quartz_splitblock", "Quartz Splitblock","myores_quartz_splitblock.png"},
+					{"quartz_tiles",      "Quartz Tiles",   "myores_quartz_tiles.png"},
+					{"stone_with_quartz", "Quartz In Stone","default_stone.png^myores_mineral_quartz.png"},
+					{"chalcopyrite",  		  "Chalcopyrite", 		"myores_chalcopyrite.png"},
+					{"chalcopyrite_block",      "Chalcopyrite Block",   "myores_chalcopyrite_block.png"},
+					{"chalcopyrite_brick",      "Chalcopyrite Brick",   "myores_chalcopyrite_brick.png"},
+					{"chalcopyrite_splitblock", "Chalcopyrite Splitblock","myores_chalcopyrite_splitblock.png"},
+					{"chalcopyrite_tiles",      "Chalcopyrite Tiles",   "myores_chalcopyrite_tiles.png"},
+					{"stone_with_chalcopyrite", "Chalcopyrite In Stone","default_stone.png^myores_mineral_chalcopyrite.png"},
 					}
 					
 for i in ipairs(ores_table) do
@@ -103,6 +115,10 @@ minetest.override_item("myores:stone_with_chromium",{
 	drop = "myores:chromium_lump",})
 minetest.override_item("myores:stone_with_manganese",{
 	drop = "myores:manganese_lump",})
+minetest.override_item("myores:stone_with_quartz",{
+	drop = "myores:quartz_crystal",})
+minetest.override_item("myores:stone_with_chalcopyrite",{
+	drop = "myores:chalcopyrite_lump",})
 
 --Craft Items
 minetest.register_craftitem("myores:calcium_lump",{
@@ -147,7 +163,6 @@ minetest.register_craftitem("myores:chromium_ingot",{
 	inventory_image = "myores_chromium_ingot.png",
 	description = "Chromium Ingot",
 })
-
 minetest.register_craftitem("myores:manganese_lump",{
 	inventory_image = "myores_manganese_lump.png",
 	description = "Manganese Lump",
@@ -155,4 +170,12 @@ minetest.register_craftitem("myores:manganese_lump",{
 minetest.register_craftitem("myores:manganese_ingot",{
 	inventory_image = "myores_manganese_ingot.png",
 	description = "Manganese Ingot",
+})
+minetest.register_craftitem("myores:chalcopyrite_lump",{
+	inventory_image = "myores_chalcopyrite_lump.png",
+	description = "Chalcopyrite Lump",
+})
+minetest.register_craftitem("myores:quartz_crystals",{
+	inventory_image = "myores_quartz_crystals.png",
+	description = "Quartz Crystals",
 })
