@@ -418,7 +418,7 @@ minetest.register_ore({
 	clust_num_ores = 5,
 	clust_size     = 3,
 	height_min     = -31000,
-	height_max     = -15,
+	height_max     = -150,
 	flags          = "absheight",
 })
 
@@ -455,7 +455,7 @@ minetest.register_ore({
 	clust_num_ores = 5,
 	clust_size     = 3,
 	height_min     = -31000,
-	height_max     = -15,
+	height_max     = -200,
 	flags          = "absheight",
 })
 
@@ -489,10 +489,10 @@ minetest.register_ore({
 	ore            = "myores:stone_with_quartz",
 	wherein        = "default:stone",
 	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_num_ores = 3,
+	clust_size     = 2,
 	height_min     = -31000,
-	height_max     = -15,
+	height_max     = -300,
 	flags          = "absheight",
 })
 
@@ -529,7 +529,7 @@ minetest.register_ore({
 	clust_num_ores = 5,
 	clust_size     = 3,
 	height_min     = -31000,
-	height_max     = -15,
+	height_max     = -250,
 	flags          = "absheight",
 })
 

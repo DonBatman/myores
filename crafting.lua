@@ -256,7 +256,8 @@ minetest.register_craft({
 	output = "myores:granite_tile 4",
 	recipe = {
     		{"myores:granite","myores:granite",""},
-		{"myores:granite","myores:granite",""},
+			{"myores:granite","myores:granite",""},
+			{"","",""},
 	}
 })
 
@@ -264,7 +265,8 @@ minetest.register_craft({
 	output = "myores:granite_tiles 4",
 	recipe = {
     		{"myores:granite_tile","myores:granite_tile",""},
-		{"myores:granite_tile","myores:granite_tile",""},
+			{"myores:granite_tile","myores:granite_tile",""},
+			{"","",""},
 	}
 })
 
@@ -272,7 +274,8 @@ minetest.register_craft({
 	output = "myores:granite_splitstone 4",
 	recipe = {
     		{"myores:granite","","myores:granite"},
-		{"myores:granite","","myores:granite"},
+			{"myores:granite","","myores:granite"},
+			{"","",""},
 	}
 })
 
@@ -288,7 +291,8 @@ minetest.register_craft({
 	output = "myores:marble_tile 4",
 	recipe = {
     		{"myores:marble","myores:marble",""},
-		{"myores:marble","myores:marble",""},
+			{"myores:marble","myores:marble",""},
+			{"","",""},
 	}
 })
 
@@ -296,8 +300,8 @@ minetest.register_craft({
 	output = "myores:marble_tiles 4",
 	recipe = {
     		{"myores:marble_block","myores:marble_block",""},
-		{"myores:marble_block","myores:marble_block",""},
-		{"","",""},
+			{"myores:marble_block","myores:marble_block",""},
+			{"","",""},
 	}
 })
 
@@ -305,8 +309,8 @@ minetest.register_craft({
 	output = "myores:marble_splitstone 4",
 	recipe = {
     		{"myores:marble","","myores:marble"},
-		{"myores:marble","","myores:marble"},
-		{"","",""},
+			{"myores:marble","","myores:marble"},
+			{"","",""},
 	}
 })
 
@@ -328,8 +332,8 @@ minetest.register_craft({
 	output = "myores:calcium_block 1",
 	recipe = {
     		{"myores:calcium_ingot","myores:calcium_ingot","myores:calcium_ingot"},
-		{"myores:calcium_ingot","myores:calcium_ingot","myores:calcium_ingot"},
-		{"myores:calcium_ingot","myores:calcium_ingot","myores:calcium_ingot"},
+			{"myores:calcium_ingot","myores:calcium_ingot","myores:calcium_ingot"},
+			{"myores:calcium_ingot","myores:calcium_ingot","myores:calcium_ingot"},
 	}
 })
 
@@ -345,8 +349,8 @@ minetest.register_craft({
 	output = "myores:sodium_block 1",
 	recipe = {
     		{"myores:sodium_ingot","myores:sodium_ingot","myores:sodium_ingot"},
-		{"myores:sodium_ingot","myores:sodium_ingot","myores:sodium_ingot"},
-		{"myores:sodium_ingot","myores:sodium_ingot","myores:sodium_ingot"},
+			{"myores:sodium_ingot","myores:sodium_ingot","myores:sodium_ingot"},
+			{"myores:sodium_ingot","myores:sodium_ingot","myores:sodium_ingot"},
 	}
 })
 
@@ -355,8 +359,8 @@ minetest.register_craft({
 	output = "myores:silver_block 4",
 	recipe = {
     		{"myores:silver","myores:silver",""},
-		{"myores:silver","myores:silver",""},
-		{"","",""},
+			{"myores:silver","myores:silver",""},
+			{"","",""},
 	}
 })
 
@@ -364,8 +368,8 @@ minetest.register_craft({
 	output = "myores:silver_tiles 4",
 	recipe = {
     		{"myores:silver_block","myores:silver_block",""},
-		{"myores:silver_block","myores:silver_block",""},
-		{"","",""},
+			{"myores:silver_block","myores:silver_block",""},
+			{"","",""},
 	}
 })
 
@@ -373,8 +377,8 @@ minetest.register_craft({
 	output = "myores:silver_splitblock 4",
 	recipe = {
     		{"myores:silver","","myores:silver"},
-		{"myores:silver","","myores:silver"},
-		{"","",""},
+			{"myores:silver","","myores:silver"},
+			{"","",""},
 	}
 })
 
@@ -403,8 +407,8 @@ minetest.register_craft({
 	output = "myores:chromium_block 4",
 	recipe = {
     		{"myores:chromium","myores:chromium",""},
-		{"myores:chromium","myores:chromium",""},
-		{"","",""},
+			{"myores:chromium","myores:chromium",""},
+			{"","",""},
 	}
 })
 
@@ -412,8 +416,8 @@ minetest.register_craft({
 	output = "myores:chromium_tiles 4",
 	recipe = {
     		{"myores:chromium_block","myores:chromium_block",""},
-		{"myores:chromium_block","myores:chromium_block",""},
-		{"","",""},
+			{"myores:chromium_block","myores:chromium_block",""},
+			{"","",""},
 	}
 })
 
@@ -421,8 +425,8 @@ minetest.register_craft({
 	output = "myores:chromium_splitblock 4",
 	recipe = {
     		{"myores:chromium","","myores:chromium"},
-		{"myores:chromium","","myores:chromium"},
-		{"","",""},
+			{"myores:chromium","","myores:chromium"},
+			{"","",""},
 	}
 })
 
@@ -451,8 +455,8 @@ minetest.register_craft({
 	output = "myores:manganese_block 4",
 	recipe = {
     		{"myores:manganese","myores:manganese",""},
-		{"myores:manganese","myores:manganese",""},
-		{"","",""},
+			{"myores:manganese","myores:manganese",""},
+			{"","",""},
 	}
 })
 
@@ -460,8 +464,8 @@ minetest.register_craft({
 	output = "myores:manganese_tiles 4",
 	recipe = {
     		{"myores:manganese_block","myores:manganese_block",""},
-		{"myores:manganese_block","myores:manganese_block",""},
-		{"","",""},
+			{"myores:manganese_block","myores:manganese_block",""},
+			{"","",""},
 	}
 })
 
@@ -469,8 +473,8 @@ minetest.register_craft({
 	output = "myores:manganese_splitblock 4",
 	recipe = {
     		{"myores:manganese","","myores:manganese"},
-		{"myores:manganese","","myores:manganese"},
-		{"","",""},
+			{"myores:manganese","","myores:manganese"},
+			{"","",""},
 	}
 })
 
@@ -499,8 +503,8 @@ minetest.register_craft({
 	output = "myores:quartz_block 4",
 	recipe = {
     		{"myores:quartz","myores:quartz",""},
-		{"myores:quartz","myores:quartz",""},
-		{"","",""},
+			{"myores:quartz","myores:quartz",""},
+			{"","",""},
 	}
 })
 
@@ -508,8 +512,8 @@ minetest.register_craft({
 	output = "myores:quartz_tiles 4",
 	recipe = {
     		{"myores:quartz_block","myores:quartz_block",""},
-		{"myores:quartz_block","myores:quartz_block",""},
-		{"","",""},
+			{"myores:quartz_block","myores:quartz_block",""},
+			{"","",""},
 	}
 })
 
@@ -517,8 +521,8 @@ minetest.register_craft({
 	output = "myores:quartz_splitblock 4",
 	recipe = {
     		{"myores:quartz","","myores:quartz"},
-		{"myores:quartz","","myores:quartz"},
-		{"","",""},
+			{"myores:quartz","","myores:quartz"},
+			{"","",""},
 	}
 })
 
@@ -541,8 +545,8 @@ minetest.register_craft({
 	output = "myores:chalcopyrite_block 4",
 	recipe = {
     		{"myores:chalcopyrite","myores:chalcopyrite",""},
-		{"myores:chalcopyrite","myores:chalcopyrite",""},
-		{"","",""},
+			{"myores:chalcopyrite","myores:chalcopyrite",""},
+			{"","",""},
 	}
 })
 
@@ -550,8 +554,8 @@ minetest.register_craft({
 	output = "myores:chalcopyrite_tiles 4",
 	recipe = {
     		{"myores:chalcopyrite_block","myores:chalcopyrite_block",""},
-		{"myores:chalcopyrite_block","myores:chalcopyrite_block",""},
-		{"","",""},
+			{"myores:chalcopyrite_block","myores:chalcopyrite_block",""},
+			{"","",""},
 	}
 })
 
@@ -559,17 +563,9 @@ minetest.register_craft({
 	output = "myores:chalcopyrite_splitblock 4",
 	recipe = {
     		{"myores:chalcopyrite","","myores:chalcopyrite"},
-		{"myores:chalcopyrite","","myores:chalcopyrite"},
-		{"","",""},
+			{"myores:chalcopyrite","","myores:chalcopyrite"},
+			{"","",""},
 	}
-})
-
-minetest.register_craft({
-	output = "myores:quartz",
-	recipe = {{"myores:chalcopyrite_lump","myores:chalcopyrite_lump","myores:chalcopyrite_lump"},
-				{"myores:chalcopyrite_lump","myores:chalcopyrite_lump","myores:chalcopyrite_lump"},
-				{"myores:chalcopyrite_lump","myores:chalcopyrite_lump","myores:chalcopyrite_lump"},
-				}
 })
 
 minetest.register_craft({
