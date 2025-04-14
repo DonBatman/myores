@@ -76,7 +76,7 @@ minetest.register_craft({
 	recipe = "myores:chromium_lump",
 })
 
---Chromium
+--Manganese
 
 minetest.register_craft({
 	output = "myores:manganese_splitblock 4",
@@ -572,4 +572,382 @@ minetest.register_craft({
 	type = "cooking",
 	output = "myores:chalcopyrite_brick",
 	recipe = "myores:chalcopyrite",
+})
+
+--Cobalt
+minetest.register_craft({
+	output = "myores:cobalt_block 4",
+	recipe = {
+    		{"myores:cobalt","myores:cobalt",""},
+			{"myores:cobalt","myores:cobalt",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:cobalt_tiles 4",
+	recipe = {
+    		{"myores:cobalt_block","myores:cobalt_block",""},
+			{"myores:cobalt_block","myores:cobalt_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:cobalt_splitblock 4",
+	recipe = {
+    		{"myores:cobalt","","myores:cobalt"},
+			{"myores:cobalt","","myores:cobalt"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:cobalt",
+	recipe = {{"myores:cobalt_lump","myores:cobalt_lump","myores:cobalt_lump"},
+				{"myores:cobalt_lump","myores:cobalt_lump","myores:cobalt_lump"},
+				{"myores:cobalt_lump","myores:cobalt_lump","myores:cobalt_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:cobalt_brick",
+	recipe = "myores:cobalt",
+})
+
+--uvarovite
+minetest.register_craft({
+	output = "myores:uvarovite_block 4",
+	recipe = {
+    		{"myores:uvarovite","myores:uvarovite",""},
+			{"myores:uvarovite","myores:uvarovite",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:uvarovite_tiles 4",
+	recipe = {
+    		{"myores:uvarovite_block","myores:uvarovite_block",""},
+			{"myores:uvarovite_block","myores:uvarovite_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:uvarovite_splitblock 4",
+	recipe = {
+    		{"myores:uvarovite","","myores:uvarovite"},
+			{"myores:uvarovite","","myores:uvarovite"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:uvarovite",
+	recipe = {{"myores:uvarovite_lump","myores:uvarovite_lump","myores:uvarovite_lump"},
+				{"myores:uvarovite_lump","myores:uvarovite_lump","myores:uvarovite_lump"},
+				{"myores:uvarovite_lump","myores:uvarovite_lump","myores:uvarovite_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:uvarovite_brick",
+	recipe = "myores:uvarovite",
+})
+
+--selenite
+minetest.register_craft({
+	output = "myores:selenite_block 4",
+	recipe = {
+    		{"myores:selenite","myores:selenite",""},
+			{"myores:selenite","myores:selenite",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:selenite_tiles 4",
+	recipe = {
+    		{"myores:selenite_block","myores:selenite_block",""},
+			{"myores:selenite_block","myores:selenite_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:selenite_splitblock 4",
+	recipe = {
+    		{"myores:selenite","","myores:selenite"},
+			{"myores:selenite","","myores:selenite"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:selenite",
+	recipe = {{"myores:selenite_lump","myores:selenite_lump","myores:selenite_lump"},
+				{"myores:selenite_lump","myores:selenite_lump","myores:selenite_lump"},
+				{"myores:selenite_lump","myores:selenite_lump","myores:selenite_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:selenite_brick",
+	recipe = "myores:selenite",
+})
+
+--miserite
+minetest.register_craft({
+	output = "myores:miserite_block 4",
+	recipe = {
+    		{"myores:miserite","myores:miserite",""},
+			{"myores:miserite","myores:miserite",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:miserite_tiles 4",
+	recipe = {
+    		{"myores:miseritee_block","myores:miserite_block",""},
+			{"myores:miserite_block","myores:miserite_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:miserite_splitblock 4",
+	recipe = {
+    		{"myores:miserite","","myores:miserite"},
+			{"myores:miserite","","myores:miserite"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:miserite",
+	recipe = {{"myores:miserite_lump","myores:miserite_lump","myores:miserite_lump"},
+				{"myores:miserite_lump","myores:miserite_lump","myores:miserite_lump"},
+				{"myores:miserite_lump","myores:miserite_lump","myores:miserite_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:miserite_brick",
+	recipe = "myores:miserite",
+})
+
+--limonite
+minetest.register_craft({
+	output = "myores:limonite_block 4",
+	recipe = {
+    		{"myores:limonite","myores:limonite",""},
+			{"myores:limonite","myores:limonite",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:limonite_tiles 4",
+	recipe = {
+    		{"myores:limonite_block","myores:limonite_block",""},
+			{"myores:limonite_block","myores:limonite_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:limonite_splitblock 4",
+	recipe = {
+    		{"myores:limonite","","myores:limonite"},
+			{"myores:limonite","","myores:limonite"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:limonite",
+	recipe = {{"myores:limonite_lump","myores:limonite_lump","myores:limonite_lump"},
+				{"myores:limonite_lump","myores:limonite_lump","myores:limonite_lump"},
+				{"myores:limonite_lump","myores:limonite_lump","myores:limonite_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:limonite_brick",
+	recipe = "myores:limonite",
+})
+
+--Sulfur
+minetest.register_craft({
+	output = "myores:sulfur_block 4",
+	recipe = {
+    		{"myores:sulfur","myores:sulfur",""},
+			{"myores:sulfur","myores:sulfur",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:sulfur_tiles 4",
+	recipe = {
+    		{"myores:sulfur_block","myores:sulfur_block",""},
+			{"myores:sulfur_block","myores:sulfur_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:sulfur_splitblock 4",
+	recipe = {
+    		{"myores:sulfur","","myores:sulfur"},
+			{"myores:sulfur","","myores:sulfur"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:sulfur",
+	recipe = {{"myores:sulfur_lump","myores:sulfur_lump","myores:sulfur_lump"},
+				{"myores:sulfur_lump","myores:sulfur_lump","myores:sulfur_lump"},
+				{"myores:sulfur_lump","myores:sulfur_lump","myores:sulfur_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:sulfur_brick",
+	recipe = "myores:sulfur",
+})
+
+--Lapis Lazuli
+minetest.register_craft({
+	output = "myores:lapis_lazuli_block 4",
+	recipe = {
+    		{"myores:lapis_lazuli","myores:lapis_lazuli",""},
+			{"myores:lapis_lazuli","myores:lapis_lazuli",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:lapis_lazuli_tiles 4",
+	recipe = {
+    		{"myores:lapis_lazuli_block","myores:lapis_lazuli_block",""},
+			{"myores:lapis_lazuli_block","myores:lapis_lazuli_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:lapis_lazuli_splitblock 4",
+	recipe = {
+    		{"myores:lapis_lazuli","","myores:lapis_lazuli"},
+			{"myores:lapis_lazuli","","myores:lapis_lazuli"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:lapis_lazuli",
+	recipe = {{"myores:lapis_lazuli_lump","myores:lapis_lazuli_lump","myores:lapis_lazuli_lump"},
+				{"myores:lapis_lazuli_lump","myores:lapis_lazuli_lump","myores:lapis_lazuli_lump"},
+				{"myores:lapis_lazuli_lump","myores:lapis_lazuli_lump","myores:lapis_lazuli_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:lapis_lazuli_brick",
+	recipe = "myores:lapis_lazuli",
+})
+
+--Emerald
+minetest.register_craft({
+	output = "myores:emerald_block 4",
+	recipe = {
+    		{"myores:emerald","myores:emerald",""},
+			{"myores:emerald","myores:emerald",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:emerald_tiles 4",
+	recipe = {
+    		{"myores:emerald_block","myores:emerald_block",""},
+			{"myores:emerald_block","myores:emerald_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:emerald_splitblock 4",
+	recipe = {
+    		{"myores:emerald","","myores:emerald"},
+			{"myores:emerald","","myores:emerald"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:emerald",
+	recipe = {{"myores:emerald_lump","myores:emerald_lump","myores:emerald_lump"},
+				{"myores:emerald_lump","myores:emerald_lump","myores:emerald_lump"},
+				{"myores:emerald_lump","myores:emerald_lump","myores:emerald_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:emerald_brick",
+	recipe = "myores:emerald",
+})
+
+--Emerald
+minetest.register_craft({
+	output = "myores:amethyst_block 4",
+	recipe = {
+    		{"myores:amethyst","myores:amethyst",""},
+			{"myores:amethyst","myores:amethyst",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:amethyst_tiles 4",
+	recipe = {
+    		{"myores:amethyst_block","myores:amethyst_block",""},
+			{"myores:amethyst_block","myores:amethyst_block",""},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:amethyst_splitblock 4",
+	recipe = {
+    		{"myores:amethyst","","myores:amethyst"},
+			{"myores:amethyst","","myores:amethyst"},
+			{"","",""},
+	}
+})
+
+minetest.register_craft({
+	output = "myores:amethyst",
+	recipe = {{"myores:amethyst_lump","myores:amethyst_lump","myores:amethyst_lump"},
+				{"myores:amethyst_lump","myores:amethyst_lump","myores:amethyst_lump"},
+				{"myores:amethyst_lump","myores:amethyst_lump","myores:amethyst_lump"},
+				}
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "myores:amethyst_brick",
+	recipe = "myores:amethyst",
 })

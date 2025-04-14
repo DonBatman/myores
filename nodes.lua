@@ -75,6 +75,60 @@ local ores_table = {--item, Description, image
 					{"chalcopyrite_splitblock", "Chalcopyrite Splitblock","myores_chalcopyrite_splitblock.png"},
 					{"chalcopyrite_tiles",      "Chalcopyrite Tiles",   "myores_chalcopyrite_tiles.png"},
 					{"stone_with_chalcopyrite", "Chalcopyrite In Stone","default_stone.png^myores_mineral_chalcopyrite.png"},
+					{"cobalt",  		  "Cobalt", 			"myores_cobalt.png"},
+					{"cobalt_block",      "Cobalt Block",   	"myores_cobalt_block.png"},
+					{"cobalt_brick",      "Cobalt Brick",   	"myores_cobalt_brick.png"},
+					{"cobalt_splitblock", "Cobalt Splitblock",	"myores_cobalt_splitblock.png"},
+					{"cobalt_tiles",      "Cobalt Tiles",   	"myores_cobalt_tiles.png"},
+					{"stone_with_cobalt", "Cobalt In Stone",	"default_stone.png^myores_mineral_cobalt.png"},
+					{"uvarovite",  		 	 "Uvarovite", 			"myores_uvarovite.png"},
+					{"uvarovite_block",      "Uvarovite Block",   	"myores_uvarovite_block.png"},
+					{"uvarovite_brick",      "Uvarovite Brick",   	"myores_uvarovite_brick.png"},
+					{"uvarovite_splitblock", "Uvarovite Splitblock",	"myores_uvarovite_splitblock.png"},
+					{"uvarovite_tiles",      "Uvarovite Tiles",   	"myores_uvarovite_tiles.png"},
+					{"stone_with_uvarovite", "Uvarovite In Stone",	"default_stone.png^myores_mineral_uvarovite.png"},
+					{"selenite",  		  	 "Selenite", 			"myores_selenite.png"},
+					{"selenite_block",      "Selenite Block",   	"myores_selenite_block.png"},
+					{"selenite_brick",      "Selenite Brick",   	"myores_selenite_brick.png"},
+					{"selenite_splitblock", "Selenite Splitblock",	"myores_selenite_splitblock.png"},
+					{"selenite_tiles",      "Selenite Tiles",   	"myores_selenite_tiles.png"},
+					{"stone_with_selenite", "Selenite In Stone",	"default_stone.png^myores_mineral_selenite.png"},
+					{"miserite",  		  	 "Miserite", 			"myores_miserite.png"},
+					{"miserite_block",      "Miserite Block",   	"myores_miserite_block.png"},
+					{"miserite_brick",      "Miserite Brick",   	"myores_miserite_brick.png"},
+					{"miserite_splitblock", "Miserite Splitblock",	"myores_miserite_splitblock.png"},
+					{"miserite_tiles",      "Miserite Tiles",   	"myores_miserite_tiles.png"},
+					{"stone_with_miserite", "Miserite In Stone",	"default_stone.png^myores_mineral_miserite.png"},
+					{"limonite",  		  	 "Limonite", 			"myores_limonite.png"},
+					{"limonite_block",      "Limonite Block",   	"myores_limonite_block.png"},
+					{"limonite_brick",      "Limonite Brick",   	"myores_limonite_brick.png"},
+					{"limonite_splitblock", "Limonite Splitblock",	"myores_limonite_splitblock.png"},
+					{"limonite_tiles",      "Limonite Tiles",   	"myores_limonite_tiles.png"},
+					{"stone_with_limonite", "Limonite In Stone",	"default_stone.png^myores_mineral_limonite.png"},
+					{"sulfur",  		  	 "Sulfur", 			"myores_sulfur.png"},
+					{"sulfur_block",      "Sulfur Block",   	"myores_sulfur_block.png"},
+					{"sulfur_brick",      "Sulfur Brick",   	"myores_sulfur_brick.png"},
+					{"sulfur_splitblock", "Sulfur Splitblock",	"myores_sulfur_splitblock.png"},
+					{"sulfur_tiles",      "Sulfur Tiles",   	"myores_sulfur_tiles.png"},
+					{"stone_with_sulfur", "Sulfur In Stone",	"default_stone.png^myores_mineral_sulfur.png"},
+					{"lapis_lazuli",  		  	 "Lapis Lazuli", 			"myores_lapis_lazuli.png"},
+					{"lapis_lazuli_block",      "Lapis Lazuli Block",   	"myores_lapis_lazuli_block.png"},
+					{"lapis_lazuli_brick",      "Lapis Lazuli Brick",   	"myores_lapis_lazuli_brick.png"},
+					{"lapis_lazuli_splitblock", "Lapis Lazuli Splitblock",	"myores_lapis_lazuli_splitblock.png"},
+					{"lapis_lazuli_tiles",      "Lapis Lazuli Tiles",   	"myores_lapis_lazuli_tiles.png"},
+					{"stone_with_lapis_lazuli", "Lapis Lazuli In Stone",	"default_stone.png^myores_mineral_lapis_lazuli.png"},
+					{"emerald",  		   "Emerald", 			"myores_emerald.png"},
+					{"emerald_block",      "Emerald Block",   	"myores_emerald_block.png"},
+					{"emerald_brick",      "Emerald Brick",   	"myores_emerald_brick.png"},
+					{"emerald_splitblock", "Emerald Splitblock","myores_emerald_splitblock.png"},
+					{"emerald_tiles",      "Emerald Tiles",   	"myores_emerald_tiles.png"},
+					{"stone_with_emerald", "Emerald In Stone",	"default_stone.png^myores_mineral_emerald.png"},
+					{"amethyst",  		   "Amethyst", 			"myores_amethyst.png"},
+					{"amethyst_block",      "Amethyst Block",   	"myores_amethyst_block.png"},
+					{"amethyst_brick",      "Amethyst Brick",   	"myores_amethyst_brick.png"},
+					{"amethyst_splitblock", "Amethyst Splitblock","myores_amethyst_splitblock.png"},
+					{"amethyst_tiles",      "Amethyst Tiles",   	"myores_amethyst_tiles.png"},
+					{"stone_with_amethyst", "Amethyst In Stone",	"default_stone.png^myores_mineral_amethyst.png"},
 					}
 					
 for i in ipairs(ores_table) do
@@ -94,31 +148,72 @@ minetest.register_node("myores:"..mat, {
 })
 end
 minetest.override_item("myores:stone_with_gneiss",{
-	drop = "myores:gneiss",})
+	drop = "myores:gneiss",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_silt",{
-	drop = "myores:silt",})
+	drop = "myores:silt",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_slate",{
-	drop = "myores:slate",})
+	drop = "myores:slate",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_shale",{
-	drop = "myores:shale",})
+	drop = "myores:shale",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_schist",{
-	drop = "myores:schist",})
+	drop = "myores:schist",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_redsandstone",{
-	drop = "myores:redsandstone",})
+	drop = "myores:redsandstone",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_calcium",{
-	drop = "myores:calcium_lump",})
+	drop = "myores:calcium_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_sodium",{
-	drop = "myores:sodium_lump",})
+	drop = "myores:sodium_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_silver",{
-	drop = "myores:silver_lump",})
+	drop = "myores:silver_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_chromium",{
-	drop = "myores:chromium_lump",})
+	drop = "myores:chromium_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_manganese",{
-	drop = "myores:manganese_lump",})
+	drop = "myores:manganese_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_quartz",{
-	drop = "myores:quartz_crystals",})
+	drop = "myores:quartz_crystals",
+	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_chalcopyrite",{
-	drop = "myores:chalcopyrite_lump",})
+	drop = "myores:chalcopyrite_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_cobalt",{
+	drop = "myores:cobalt_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_uvarovite",{
+	drop = "myores:uvarovite_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_selenite",{
+	drop = "myores:selenite_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_miserite",{
+	drop = "myores:miserite_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_limonite",{
+	drop = "myores:limonite_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_sulfur",{
+	drop = "myores:sulfur_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_lapis_lazuli",{
+	drop = "myores:lapis_lazuli_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_emerald",{
+	drop = "myores:emerald_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_amethyst",{
+	drop = "myores:amethyst_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+
 
 --Craft Items
 minetest.register_craftitem("myores:calcium_lump",{
@@ -145,7 +240,6 @@ minetest.register_craftitem("myores:salt",{
 	inventory_image = "myores_salt.png",
 	description = "Salt",
 })
-
 minetest.register_craftitem("myores:silver_lump",{
 	inventory_image = "myores_silver_lump.png",
 	description = "Silver Lump",
@@ -154,7 +248,6 @@ minetest.register_craftitem("myores:silver_ingot",{
 	inventory_image = "myores_silver_ingot.png",
 	description = "Silver Ingot",
 })
-
 minetest.register_craftitem("myores:chromium_lump",{
 	inventory_image = "myores_chromium_lump.png",
 	description = "Chromium Lump",
@@ -178,4 +271,40 @@ minetest.register_craftitem("myores:chalcopyrite_lump",{
 minetest.register_craftitem("myores:quartz_crystals",{
 	inventory_image = "myores_quartz_crystals.png",
 	description = "Quartz Crystals",
+})
+minetest.register_craftitem("myores:cobalt_lump",{
+	inventory_image = "myores_cobalt_lump.png",
+	description = "Cobalt Lump",
+})
+minetest.register_craftitem("myores:uvarovite_lump",{
+	inventory_image = "myores_uvarovite_lump.png",
+	description = "Uvarovite Lump",
+})
+minetest.register_craftitem("myores:selenite_lump",{
+	inventory_image = "myores_selenite_lump.png",
+	description = "Selenite Lump",
+})
+minetest.register_craftitem("myores:miserite_lump",{
+	inventory_image = "myores_miserite_lump.png",
+	description = "Miserite Lump",
+})
+minetest.register_craftitem("myores:limonite_lump",{
+	inventory_image = "myores_limonite_lump.png",
+	description = "Limonite Lump",
+})
+minetest.register_craftitem("myores:sulfur_lump",{
+	inventory_image = "myores_sulfur_lump.png",
+	description = "Sulfur Lump",
+})
+minetest.register_craftitem("myores:lapis_lazuli_lump",{
+	inventory_image = "myores_lapis_lazuli_lump.png",
+	description = "Lapis Lazuli Lump",
+})
+minetest.register_craftitem("myores:emerald_lump",{
+	inventory_image = "myores_emerald_lump.png",
+	description = "Emerald Lump",
+})
+minetest.register_craftitem("myores:amethyst_lump",{
+	inventory_image = "myores_amethyst_lump.png",
+	description = "Amethyst Lump",
 })

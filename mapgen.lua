@@ -556,3 +556,325 @@ minetest.register_ore({
 	height_max     = -1000,
 	flags          = "absheight",
 })
+
+--Cobalt
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_cobalt",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_cobalt",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -400,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_cobalt",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -600,
+	flags          = "absheight",
+})
+
+--Uvarovite
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_uvarovite",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -100,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_uvarovite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_uvarovite",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -400,
+	flags          = "absheight",
+})
+
+--Selenite
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_selenite",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -100,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_selenite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_selenite",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -400,
+	flags          = "absheight",
+})
+
+--Miserite
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_miserite",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -300,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_miserite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -700,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_miserite",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -1200,
+	flags          = "absheight",
+})
+
+--Limonite
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_limonite",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -100,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_limonite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_limonite",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -300,
+	flags          = "absheight",
+})
+
+--Sulur
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_sulfur",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 6,
+	clust_size     = 4,
+	height_min     = -31000,
+	height_max     = -10,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_sulfur",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 8,
+	clust_size     = 5,
+	height_min     = -31000,
+	height_max     = -100,
+	flags          = "absheight",
+})
+
+--Lapis Lazuli
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_lapis_lazuli",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 3,
+	clust_size     = 1,
+	height_min     = -31000,
+	height_max     = -10,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_lapis_lazuli",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -100,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_lapis_lazuli",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+--Emerald
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_emerald",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 3,
+	clust_size     = 1,
+	height_min     = -31000,
+	height_max     = -50,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_emerald",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_emerald",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -500,
+	flags          = "absheight",
+})
+
+--Amethyst
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_amethyst",
+	wherein        = "default:stone",
+	clust_scarcity = 9*9*9,
+	clust_num_ores = 3,
+	clust_size     = 1,
+	height_min     = -31000,
+	height_max     = -50,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_amethyst",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -200,
+	flags          = "absheight",
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:stone_with_amethyst",
+	wherein        = "default:stone",
+	clust_scarcity = 12*12*12,
+	clust_num_ores = 5,
+	clust_size     = 3,
+	height_min     = -31000,
+	height_max     = -500,
+	flags          = "absheight",
+})
+
