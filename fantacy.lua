@@ -393,6 +393,34 @@ core.register_node("myores:mystery_block",{
 		elseif rand == 19 then
 			core.spawn_item(pos,"myores:manganese 5")
 			core.spawn_item(pos,"default:stick 99")
+		elseif rand == 20 then
+			core.spawn_item(pos,"myores:cute_block 5")
+		elseif rand == 21 then
+			core.spawn_item(pos,"myores:cute_block2 5")
+		elseif rand == 22 then
+			core.spawn_item(pos,"myores:cobble_black 99")
+		elseif rand == 23 then
+			core.spawn_item(pos,"myores:cobble_white 99")
+		elseif rand == 24 then
+			core.spawn_item(pos,"myores:cobble_white 50")
+			core.spawn_item(pos,"default:stick 50")
+		elseif rand == 25 then
+			core.spawn_item(pos,"myores:cobble_black 50")
+			core.spawn_item(pos,"default:stick 50")
+		elseif rand == 26 then
+			core.spawn_item(pos,"farming:seed_wheat 15")
+			core.spawn_item(pos,"farming:steel_hoe 1")
+		elseif rand == 27 then
+			core.spawn_item(pos,"farming:seed_cotton 15")
+			core.spawn_item(pos,"farming:steel_hoe 1")
+		elseif rand == 28 then
+			core.spawn_item(pos,"default:large_cactus_seedling 15")
+			core.spawn_item(pos,"farming:steel_axe 1")
+		elseif rand == 29 then
+			core.spawn_item(pos,"myores:bounce_block 9")
+		elseif rand == 30 then
+			core.spawn_item(pos,"myores:bounce_block 1")
+			core.spawn_item(pos,"myores:amethyst 15")
 		end
 		minetest.add_particlespawner(20, 2,
 				pos, pos,
@@ -461,4 +489,103 @@ core.register_ore({
 	clust_size     = 3,
 	height_min     = -31000,
 	height_max     = -50,
+})
+--Cute Blocks
+minetest.register_node("myores:cute_block", {
+	description = "Cutepie Block",
+	drawtype = "normal",
+	tiles = {
+		"myores_cute_block_tb.png",
+		"myores_cute_block_tb.png",
+		"myores_cute_block_frown.png",
+		"myores_cute_block_frown.png",
+		"myores_cute_block_frown.png",
+		"myores_cute_block_frown.png"
+		},
+	paramtype = "light",
+  	paramtype2 = "facedir",
+	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
+	on_punch = function(pos, node, player, pointed_thing)
+		minetest.set_node(pos,{name = "myores:cute_block_light", param2 = node.param2})
+	end,
+})
+
+minetest.register_node("myores:cute_block_light", {
+	drawtype = "normal",
+	tiles = {
+		"myores_cute_block_tb.png",
+		"myores_cute_block_tb.png",
+		"myores_cute_block.png",
+		"myores_cute_block.png",
+		"myores_cute_block.png",
+		"myores_cute_block.png"
+		},
+	paramtype = "light",
+  	paramtype2 = "facedir",
+	light_source = 14,
+	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
+	drop = "cutepie:cute_block",
+	on_punch = function(pos, node, player, pointed_thing)
+		minetest.set_node(pos,{name = "myores:cute_block", param2 = node.param2})
+	end,
+})
+
+minetest.register_node("myores:cute_block2", {
+	description = "Cutepie Block 2",
+	drawtype = "normal",
+	tiles = {"myores_cute_block2_tb.png",
+			"myores_cute_block2_tb.png",
+			"myores_cute_block2_frown.png",
+			"myores_cute_block2_frown.png",
+			"myores_cute_block2_frown.png",
+			"myores_cute_block2_frown.png"},
+	paramtype = "light",
+  	paramtype2 = "facedir",
+	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
+	on_punch = function(pos, node, player, pointed_thing)
+		minetest.set_node(pos,{name = "myores:cute_block_light2", param2 = node.param2})
+	end,
+})
+
+minetest.register_node("myores:cute_block_light2", {
+	drawtype = "normal",
+	tiles = {"myores_cute_block2_tb.png",
+			"myores_cute_block2_tb.png",
+			"myores_cute_block2.png",
+			"myores_cute_block2.png",
+			"myores_cute_block2.png",
+			"myores_cute_block2.png"},
+	paramtype = "light",
+  	paramtype2 = "facedir",
+	light_source = 14,
+	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
+	drop = "cutepie:cute_block2",
+	on_punch = function(pos, node, player, pointed_thing)
+		minetest.set_node(pos,{name = "myores:cute_block2", param2 = node.param2})
+	end,
+})
+--Cobble
+core.register_node("myores:cobble_black",{
+	description = "Black Cobble",
+	tiles = {"myores_cobble_black.png",},
+	drawtype = "normal",
+	param = "light",
+	groups = {cracky = 2, not_in_creative_inventory = 1},
+})
+core.register_node("myores:cobble_white",{
+	description = "White Cobble",
+	tiles = {"myores_cobble_white.png",},
+	drawtype = "normal",
+	param = "light",
+	groups = {cracky = 2, not_in_creative_inventory = 1},
+})
+--Bouncy Block
+minetest.register_node("myores:bounce_block", {
+	description = "Bounce Block",
+	drawtype = "normal",
+	tiles = {"myores_bounce.png"},
+	paramtype = "light",
+	groups = {cracky = 3, bouncy = 70, fall_damage_add_percent = -1000, not_in_creative_inventory = 1},
+	sounds = default.node_sound_stone_defaults(),
+
 })
