@@ -1,0 +1,12 @@
+
+#Enable fantacy 
+myores.fantasy(Enable to generate fantacy nodes) bool true
+
+#Enable bedrock 
+myores.bedrock(Enable to generate bedrock) bool true
+
+#Change the minimum depth of bedrock 
+myores.min_depth (Set minimum depth) int -29000
+
+#Change the minimum depth of bedrock 
+myores.max_depth (Set maximum depth) int -30000
