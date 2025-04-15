@@ -323,7 +323,7 @@ core.register_node("myores:mystery_block",{
 	param = "light",
 	groups = {cracky = 2, not_in_creative_inventory = 1},
 	on_destruct = function(pos)
-		local rand = math.random(30)
+		local rand = math.random(40)
 		if rand == 1 then
 			core.spawn_item(pos, "default:diamond 10")
 			core.spawn_item(pos, "default:torch 10")
@@ -434,7 +434,32 @@ core.register_node("myores:mystery_block",{
 				core.spawn_item(pos,"myores:helmet_mithril 1")
 			else
 				core.spawn_item(pos,"boats:boat 1")
-			end	
+			end
+		elseif rand == 36 then
+			if core.get_modpath("3d_armor") then
+				core.spawn_item(pos,"myores:boots_mithril 1")
+			else
+				core.spawn_item(pos,"default:sword_steel 1")
+				core.spawn_item(pos,"default:stick 25")
+			end
+		elseif rand == 37 then
+			if core.get_modpath("3d_armor") then
+				core.spawn_item(pos,"myores:chestplate_mithril 1")
+			else
+				core.spawn_item(pos,"default:pick_steel 1")
+				core.spawn_item(pos,"default:stick 25")
+			end
+		elseif rand == 38 then
+			if core.get_modpath("3d_armor") then
+				core.spawn_item(pos,"myores:leggings_mithril 1")
+			else
+				core.spawn_item(pos,"default:pick_steel 1")
+				core.spawn_item(pos,"default:stick 25")
+			end
+		elseif rand == 39 then
+			core.spawn_item(pos,"default:pick_mese 1")
+		elseif rand == 40 then
+			core.spawn_item(pos,"default:diamond 20")
 		end
 		minetest.add_particlespawner(20, 2,
 				pos, pos,

@@ -1,6 +1,7 @@
 local armor_table = {	
 		{"nether", 		"Nether",		1,12,2000,0,		15,	1,1,1,1,1},
 		{"mithril", 	"Mithril",		1,12,2000,0,		15,	1,1,1,1,1},
+		{"bloodstone", 	"Bloodstone",		1,12,2000,0,		15,	1,1,1,1,1},
 		}
 
 for i in ipairs(armor_table) do

@@ -8,6 +8,14 @@ local pick_table = {
 		{"basalt", 		"Basalt",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
 		{"gneiss", 		"Gneiss",		0.8, 0, {times={[1]=3.0, [2]=1.4, [3]=1.50}, uses=20, maxlevel=2},{fleshy=3}},
 		{"chalcopyrite","Chalcopyrite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"cobalt",		"Cobalt",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.20}, uses=20, maxlevel=2},{fleshy=3}},
+		{"uvarovite",	"Uvarovite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"selenite",	"Selenite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
+		{"miserite",	"Miserite",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"limonite",	"Limonite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=20, maxlevel=1},{fleshy=2}},
+		{"sulfur",		"Sulfur",		0.8, 0, {times={[1]=4.0, [2]=1.8, [3]=1.80}, uses=5,  maxlevel=1},{fleshy=1}},
+		{"lapis_lazuli","Lapis Lazuli",	0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"amethyst",	"Amethyst",		0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
 		}
 
 for i in ipairs(pick_table) do
@@ -43,6 +51,14 @@ local shovel_table = {
 		{"basalt", 		"Basalt",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
 		{"gneiss", 		"Gneiss",		0.8, 0, {times={[1]=3.0, [2]=1.4, [3]=1.50}, uses=20, maxlevel=2},{fleshy=3}},
 		{"chalcopyrite","Chalcopyrite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"cobalt",		"Cobalt",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.20}, uses=20, maxlevel=2},{fleshy=3}},
+		{"uvarovite",	"Uvarovite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"selenite",	"Selenite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
+		{"miserite",	"Miserite",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"limonite",	"Limonite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=20, maxlevel=1},{fleshy=2}},
+		{"sulfur",		"Sulfur",		0.8, 0, {times={[1]=4.0, [2]=1.8, [3]=1.80}, uses=5,  maxlevel=1},{fleshy=1}},
+		{"lapis_lazuli","Lapis Lazuli",	0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"amethyst",	"Amethyst",		0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
 		}
 
 for i in ipairs(shovel_table) do
@@ -78,6 +94,14 @@ local axe_table = {
 		{"basalt", 		"Basalt",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
 		{"gneiss", 		"Gneiss",		0.8, 0, {times={[1]=3.0, [2]=1.4, [3]=1.50}, uses=20, maxlevel=2},{fleshy=3}},
 		{"chalcopyrite","Chalcopyrite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"cobalt",		"Cobalt",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.20}, uses=20, maxlevel=2},{fleshy=3}},
+		{"uvarovite",	"Uvarovite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"selenite",	"Selenite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
+		{"miserite",	"Miserite",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"limonite",	"Limonite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=20, maxlevel=1},{fleshy=2}},
+		{"sulfur",		"Sulfur",		0.8, 0, {times={[1]=4.0, [2]=1.8, [3]=1.80}, uses=5,  maxlevel=1},{fleshy=1}},
+		{"lapis_lazuli","Lapis Lazuli",	0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"amethyst",	"Amethyst",		0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
 		}
 
 for i in ipairs(axe_table) do
@@ -113,6 +137,14 @@ local sword_table = {
 		{"basalt", 		"Basalt",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
 		{"gneiss", 		"Gneiss",		0.8, 0, {times={[1]=3.0, [2]=1.4, [3]=1.50}, uses=20, maxlevel=2},{fleshy=3}},
 		{"chalcopyrite","Chalcopyrite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"cobalt",		"Cobalt",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.20}, uses=20, maxlevel=2},{fleshy=3}},
+		{"uvarovite",	"Uvarovite",	0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
+		{"selenite",	"Selenite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=15, maxlevel=1},{fleshy=2}},
+		{"miserite",	"Miserite",		0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"limonite",	"Limonite",		0.8, 0, {times={[1]=4.0, [2]=1.6, [3]=1.60}, uses=20, maxlevel=1},{fleshy=2}},
+		{"sulfur",		"Sulfur",		0.8, 0, {times={[1]=4.0, [2]=1.8, [3]=1.80}, uses=5,  maxlevel=1},{fleshy=1}},
+		{"lapis_lazuli","Lapis Lazuli",	0.8, 0, {times={[1]=3.0, [2]=1.3, [3]=1.00}, uses=25, maxlevel=2},{fleshy=3}},
+		{"amethyst",	"Amethyst",		0.8, 0, {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=35, maxlevel=3},{fleshy=5}},
 		}
 
 for i in ipairs(sword_table) do
@@ -148,6 +180,14 @@ local hoe_table = {
 		{"basalt", 		"Basalt",		"basalt",			40},
 		{"gneiss", 		"Gneiss",		"gneiss",			50},
 		{"chalcopyrite","Chalcopyrite",	"chalcopyrite",		60},
+		{"cobalt",		"Cobalt",		"cobalt",			40},
+		{"uvarovite",	"Uvarovite",	"uvarovite",		60},
+		{"selenite",	"Selenite",		"selenite",			15},
+		{"miserite",	"Miserite",		"miserite",			40},
+		{"limonite",	"Limonite",		"limonite",			30},
+		{"sulfur",		"Sulfur",		"sulfur",			5},
+		{"lapis_lazuli","Lapis Lazuli",	"lapis_lazuli",		40},
+		{"amethyst",	"Amethyst",		"amethyst",			60},
 		}
 
 for i in ipairs(hoe_table) do

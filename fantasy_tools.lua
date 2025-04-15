@@ -2,6 +2,7 @@
 local pick_table = {	
 		{"nether", 		"Nether",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		{"mithril", 	"Mithril",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
+		{"bloodstone", 	"Bloodstone",	0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		}
 
 for i in ipairs(pick_table) do
@@ -14,7 +15,7 @@ for i in ipairs(pick_table) do
 
 minetest.register_tool("myores:pick_"..mat, {
 	description = des.." Pick",
-	inventory_image = "myores_pick_"..mat..".png",
+	inventory_image = "myores_"..mat.."_pick.png",
 	tool_capabilities = {
 		full_punch_interval = fpi,
 		max_drop_level= mdl,
@@ -31,6 +32,7 @@ end
 local shovel_table = {	
 		{"nether", 		"Nether",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		{"mithril", 	"Mithril",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
+		{"bloodstone", 	"Bloodstone",	0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		}
 
 for i in ipairs(shovel_table) do
@@ -43,7 +45,7 @@ for i in ipairs(shovel_table) do
 	
 minetest.register_tool("myores:shovel_"..mat, {
 	description = des.." Shovel",
-	inventory_image = "myores_shovel_"..mat..".png",
+	inventory_image = "myores_"..mat.."_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = fpi,
 		max_drop_level= mdl,
@@ -60,6 +62,7 @@ end
 local axe_table = {	
 		{"nether", 		"Nether",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		{"mithril", 	"Mithril",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
+		{"bloodstone", 	"Bloodstone",	0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		}
 
 for i in ipairs(axe_table) do
@@ -72,7 +75,7 @@ for i in ipairs(axe_table) do
 
 minetest.register_tool("myores:axe_"..mat, {
 	description = des.." Axe",
-	inventory_image = "myores_axe_"..mat..".png",
+	inventory_image = "myores_"..mat.."_axe.png",
 	tool_capabilities = {
 		full_punch_interval = fpi,
 		max_drop_level= mdl,
@@ -89,6 +92,7 @@ end
 local sword_table = {	
 		{"nether", 		"Nether",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		{"mithril", 	"Mithril",		0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
+		{"bloodstone", 	"Bloodstone",	0.6, 0, {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=50, maxlevel=3},{fleshy=8}},
 		}
 
 for i in ipairs(sword_table) do
@@ -101,7 +105,7 @@ for i in ipairs(sword_table) do
 
 minetest.register_tool("myores:sword_"..mat, {
 	description = des.." Sword",
-	inventory_image = "myores_sword_"..mat..".png",
+	inventory_image = "myores_"..mat.."_sword.png",
 	tool_capabilities = {
 		full_punch_interval = fpi,
 		max_drop_level= mdl,
@@ -118,6 +122,7 @@ end
 local hoe_table = {	
 		{"nether", 		"Nether",		"nether",			150},
 		{"mithril", 	"Mithril",		"mithril_ingot",	150},
+		{"bloodstone", 	"Bloodstone",	"mithril_ingot",	150},
 		}
 
 for i in ipairs(hoe_table) do
@@ -128,7 +133,7 @@ for i in ipairs(hoe_table) do
 
 farming.register_hoe(":myores:hoe_"..mat, {
 	description = des.." Hoe",
-	inventory_image = "myores_hoe_"..mat..".png",
+	inventory_image = "myores_"..mat.."_hoe.png",
   	stack_max = 1,
 	max_uses = use,
 	recipe = {

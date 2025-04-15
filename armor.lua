@@ -8,6 +8,15 @@ local armor_table = {
 		{"gneiss", 		"Gneiss",		1,8,500,0,		10,	3,2,3,2,2},
 		{"chalcopyrite","Chalcopyrite",	1,12,500,0,		15,	2,1,2,2,3},
 		{"chromium",	"Chromium",		1,10,500,0,		10,	2,1,2,2,3},
+		{"cobalt",		"Cobalt",		1,10,500,0,		10,	2,1,2,2,3},
+		{"uvarovite",	"Uvarovite",	1,10,500,0,		10,	2,1,2,2,3},
+		{"selenite",	"Selenite",		1,10,500,0,		10,	2,1,2,2,3},
+		{"miserite",	"Miserite",		1,10,500,0,		10,	2,1,2,2,3},
+		{"limonite",	"Limonite",		1,10,500,0,		10,	2,1,2,2,3},
+		{"sulfur",		"Sulfur",		1,10,500,0,		10,	2,1,2,2,3},
+		{"lapis_lazuli","Lapis Lazuli",	1,10,500,0,		10,	2,1,2,2,3},
+		{"emerald",		"Emerald",		1,10,500,0,		10,	2,1,2,2,3},
+		{"amethyst",	"Amethyst",		1,10,500,0,		10,	2,1,2,2,3},
 		}
 
 for i in ipairs(armor_table) do
