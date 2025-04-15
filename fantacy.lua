@@ -15,7 +15,7 @@ core.register_node("myores:glowstone_"..col,{
 	param = "light",
 	drop = "myores:glowstone_cobble_"..col,
 	light_source = 10,
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 core.register_node("myores:glowstone_cobble_"..col,{
 	description = des.." Glow Stone Cobble",
@@ -23,7 +23,7 @@ core.register_node("myores:glowstone_cobble_"..col,{
 	drawtype = "normal",
 	param = "light",
 	light_source = 10,
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 
 core.register_node("myores:glowstone_brick_"..col,{
@@ -32,7 +32,7 @@ core.register_node("myores:glowstone_brick_"..col,{
 	drawtype = "normal",
 	param = "light",
 	light_source = 10,
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 core.register_craft({
 	type = "cooking",
@@ -78,7 +78,7 @@ core.register_node("myores:nether"..mat,{
 	drawtype = "normal",
 	param = "light",
 	light_source = 10,
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 end
 core.override_item("myores:nether",{
@@ -167,7 +167,7 @@ core.register_node("myores:mithril"..mat,{
 	drawtype = "normal",
 	param = "light",
 	light_source = 10,
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 end
 core.override_item("myores:mithril",{
@@ -272,14 +272,15 @@ core.register_node("myores:nyancat",{
 			},
 	drawtype = "normal",
 	param = "light",
-	groups = {cracky = 2}
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 core.register_node("myores:nyancat_rainbow",{
 	description = " Nyan Cat",
 	tiles = {"myores_nyancat_rainbow.png",},
 	drawtype = "normal",
 	param = "light",
-	groups = {cracky = 2}
+	param2 = "facedir",
+	groups = {cracky = 2, not_in_creative_inventory = 1}
 })
 core.register_ore({
 	ore_type       = "scatter",
@@ -447,7 +448,7 @@ core.register_node("myores:bloodstone",{
 	drawtype = "normal",
 	param = "light",
 	lightsource = 10,
-	groups = {cracky = 2, not_in_creative_inventory = 0},
+	groups = {cracky = 2, not_in_creative_inventory = 1},
 })
 core.register_ore({
 	ore_type       = "scatter",
