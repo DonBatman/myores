@@ -23,5 +23,19 @@ if fant then
 end
 
 if bedr then
-	dofile(minetest.get_modpath("myores").."/bedrock.lua")
+	minetest.register_node("mybedrock:bedrock", {
+		description = "Bedrock",
+		tiles = {"mybedrock_bedrock.png"},
+		groups = {unbreakable = 1, not_in_creative_inventory = 1},
+	})
+	minetest.register_ore({
+		ore_type = "scatter",
+		ore = "mybedrock:bedrock",
+		wherein = "default:stone",
+		clust_scarcity = 1*1*1,
+		clust_num_ores = 5,
+		clust_size = 5,
+		height_min = bedmin,
+		height_max = bedmax,
+	})
 end
