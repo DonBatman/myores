@@ -174,10 +174,12 @@ core.override_item("myores:mithril",{
 	drop = "myores:mithril_lump",})
 core.register_craftitem("myores:mithril_lump",{
 	inventory_image = "myores_mithril_lump.png",
-	description = "Mithril Lump",})
+	description = "Mithril Lump",
+	groups = {not_in_creative_inventory = 1}})
 core.register_craftitem("myores:mithril_ingot",{
 	inventory_image = "myores_mithril_ingot.png",
-	description = "Mithril Ingot",})
+	description = "Mithril Ingot",
+	groups = {not_in_creative_inventory = 1}})
 --Crafts
 core.register_craft({
 	output = "myores:mithril_smbrick 4",
