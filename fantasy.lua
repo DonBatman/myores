@@ -51,8 +51,8 @@ core.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 5,
 	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -300,
+	y_min     = -31000,
+	y_max     = -300,
 })
 end
 
@@ -141,8 +141,8 @@ core.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 5,
 	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -600,
+	y_min     = -31000,
+	y_max     = -600,
 })
 
 --Mithril
@@ -246,8 +246,8 @@ core.register_ore({
 	clust_scarcity = 16*16*16,
 	clust_num_ores = 5,
 	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -300,
+	y_min     = -31000,
+	y_max     = -300,
 })
 core.register_ore({
 	ore_type       = "scatter",
@@ -256,8 +256,8 @@ core.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 5,
 	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -400,
+	y_min     = -31000,
+	y_max     = -400,
 })
 
 --Nyan
@@ -291,8 +291,8 @@ core.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 4,
 	clust_size     = 2,
-	height_min     = -31000,
-	height_max     = -50,
+	y_min     = -31000,
+	y_max     = -50,
 })
 core.register_ore({
 	ore_type       = "scatter",
@@ -301,8 +301,8 @@ core.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 7,
 	clust_size     = 4,
-	height_min     = -31000,
-	height_max     = -250,
+	y_min     = -31000,
+	y_max     = -250,
 })
 core.register_ore({
 	ore_type       = "scatter",
@@ -311,8 +311,8 @@ core.register_ore({
 	clust_scarcity = 9*9*9,
 	clust_num_ores = 1,
 	clust_size     = 1,
-	height_min     = -31000,
-	height_max     = -250,
+	y_min     = -31000,
+	y_max     = -250,
 })
 
 --Mystery Block
@@ -479,8 +479,8 @@ core.register_ore({
 	clust_scarcity = 16*16*16,
 	clust_num_ores = 1,
 	clust_size     = 1,
-	height_min     = -31000,
-	height_max     = -1,
+	y_min     = -31000,
+	y_max     = -1,
 })
 
 --Cronk
@@ -506,8 +506,8 @@ core.register_ore({
 	clust_scarcity = 16*16*16,
 	clust_num_ores = 1,
 	clust_size     = 1,
-	height_min     = -31000,
-	height_max     = -2000,
+	y_min     = -31000,
+	y_max     = -2000,
 })
 
 --Bloodstone
@@ -526,8 +526,8 @@ core.register_ore({
 	clust_scarcity = 16*16*16,
 	clust_num_ores = 4,
 	clust_size     = 3,
-	height_min     = -31000,
-	height_max     = -50,
+	y_min     = -31000,
+	y_max     = -50,
 })
 --Cute Blocks
 minetest.register_node("myores:cute_block", {

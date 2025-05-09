@@ -36,7 +36,7 @@ if bedr then
 		clust_scarcity = 1*1*1,
 		clust_num_ores = 5,
 		clust_size = 5,
-		height_min = bedmin,
-		height_max = bedmax,
+		y_min = bedmin,
+		y_max = bedmax,
 	})
 end
