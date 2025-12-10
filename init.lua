@@ -26,7 +26,7 @@ end
 if bedr then
 	minetest.register_node("myores:bedrock", {
 		description = "Bedrock",
-		tiles = {"mybedrock_bedrock.png"},
+		tiles = {"myores_bedrock.png"},
 		groups = {unbreakable = 1, not_in_creative_inventory = 1},
 	})
 	minetest.register_ore({
