@@ -150,77 +150,137 @@ minetest.register_ore({
 -- Basalt
 
 minetest.register_ore({
-	ore_type       = "scatter",
+	ore_type       = "blob",
 	ore            = "myores:basalt",
 	wherein        = "default:stone",
 	clust_scarcity = 9*9*9,
 	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_size     = 5,
 	y_min     = -31000,
 	y_max     = -15,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
-	ore_type       = "scatter",
+	ore_type       = "blob",
 	ore            = "myores:basalt",
 	wherein        = "default:stone",
 	clust_scarcity = 24*24*24,
 	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_size     = 5,
 	y_min     = -31000,
 	y_max     = -500,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
  
 minetest.register_ore({
-	ore_type       = "scatter",
+	ore_type       = "blob",
 	ore            = "myores:basalt",
 	wherein        = "default:stone",
 	clust_scarcity = 12*12*12,
 	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_size     = 5,
 	y_min     = -31000,
 	y_max     = -1000,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 --granite
 
 minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "myores:granite",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	y_min     = -31000,
-	y_max     = -15,
-	flags          = "absheight",
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
+	ore_type       = "blob",
 	ore            = "myores:granite",
 	wherein        = "default:stone",
 	clust_scarcity = 24*24*24,
 	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_size     = 5,
 	y_min     = -31000,
-	y_max     = -500,
+	y_max     = -15,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
-	ore_type       = "scatter",
+	ore_type       = "blob",
+	ore            = "myores:granite",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 5,
+	clust_size     = 5,
+	y_min     = -31000,
+	y_max     = -500,
+	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
+})
+
+minetest.register_ore({
+	ore_type       = "blob",
 	ore            = "myores:granite",
 	wherein        = "default:stone",
 	clust_scarcity = 12*12*12,
 	clust_num_ores = 5,
-	clust_size     = 3,
+	clust_size     = 5,
 	y_min     = -31000,
 	y_max     = -1000,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 --marble
@@ -272,6 +332,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -15,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
@@ -284,6 +354,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -500,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
@@ -296,6 +376,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -1000,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 --Calcium
@@ -346,6 +436,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -15,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
@@ -358,6 +458,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -500,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 minetest.register_ore({
@@ -370,6 +480,16 @@ minetest.register_ore({
 	y_min     = -31000,
 	y_max     = -1000,
 	flags          = "absheight",
+	noise_params = {
+		offset  = 0,
+		scale   = 1,
+		spread  = { x = 250, y = 250, z = 250 },
+		seed    = 12345,
+		octaves = 3,
+		persist = 0.6,
+		lacunarity = 2,
+		flags = "defaults",
+	}
 })
 
 --Silver
