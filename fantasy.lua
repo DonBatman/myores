@@ -321,6 +321,7 @@ core.register_node("myores:mystery_block",{
 	tiles = {"myores_mystery_block.png",},
 	drawtype = "normal",
 	param = "light",
+	drop = "",
 	groups = {cracky = 2, not_in_creative_inventory = 1},
 	on_destruct = function(pos)
 		local rand = math.random(40)
@@ -409,13 +410,13 @@ core.register_node("myores:mystery_block",{
 			core.spawn_item(pos,"default:stick 50")
 		elseif rand == 26 then
 			core.spawn_item(pos,"farming:seed_wheat 15")
-			core.spawn_item(pos,"farming:steel_hoe 1")
+			core.spawn_item(pos,"farming:hoe_steel 1")
 		elseif rand == 27 then
 			core.spawn_item(pos,"farming:seed_cotton 15")
-			core.spawn_item(pos,"farming:steel_hoe 1")
+			core.spawn_item(pos,"farming:hoe_steel 1")
 		elseif rand == 28 then
 			core.spawn_item(pos,"default:large_cactus_seedling 15")
-			core.spawn_item(pos,"farming:steel_axe 1")
+			core.spawn_item(pos,"default:axe_steel 1")
 		elseif rand == 29 then
 			core.spawn_item(pos,"myores:bounce_block 9")
 		elseif rand == 30 then
