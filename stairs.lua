@@ -33,7 +33,7 @@ for i in ipairs(ores_table) do
 
 
 stairs.register_stair_and_slab("myores:stair_"..mat,
-			"mywhiteblock:block_"..mat, 
+			"myores:"..mat, 
 			{cracky=2}, 
 			{img},
 			des.." Stairs", 
