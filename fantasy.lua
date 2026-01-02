@@ -288,7 +288,7 @@ core.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:nyancat_rainbow",
 	wherein        = "default:stone",
-	clust_scarcity = 20*20*20,
+	clust_scarcity = 60*60*60,
 	clust_num_ores = 4,
 	clust_size     = 2,
 	y_min     = -31000,
@@ -298,7 +298,7 @@ core.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:nyancat_rainbow",
 	wherein        = "default:stone",
-	clust_scarcity = 20*20*20,
+	clust_scarcity = 60*60*60,
 	clust_num_ores = 7,
 	clust_size     = 4,
 	y_min     = -31000,
@@ -308,7 +308,7 @@ core.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:nyancat",
 	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
+	clust_scarcity = 40*40*40,
 	clust_num_ores = 1,
 	clust_size     = 1,
 	y_min     = -31000,
@@ -477,7 +477,7 @@ core.register_ore({
 	ore_type       = "scatter",
 	ore            = "myores:mystery_block",
 	wherein        = "default:stone",
-	clust_scarcity = 16*16*16,
+	clust_scarcity = 24*24*24,
 	clust_num_ores = 1,
 	clust_size     = 1,
 	y_min     = -31000,
@@ -505,7 +505,7 @@ core.register_ore({
 	ore            = "myores:cronk",
 	wherein        = "default:stone",
 	clust_scarcity = 16*16*16,
-	clust_num_ores = 1,
+	clust_num_ores = 2,
 	clust_size     = 1,
 	y_min     = -31000,
 	y_max     = -2000,
@@ -549,6 +549,16 @@ minetest.register_node("myores:cute_block", {
 		minetest.set_node(pos,{name = "myores:cute_block_light", param2 = node.param2})
 	end,
 })
+core.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:cute_block",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 1,
+	clust_size     = 1,
+	y_min     = -31000,
+	y_max     = -50,
+})
 
 minetest.register_node("myores:cute_block_light", {
 	drawtype = "normal",
@@ -564,7 +574,7 @@ minetest.register_node("myores:cute_block_light", {
   	paramtype2 = "facedir",
 	light_source = 14,
 	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
-	drop = "cutepie:cute_block",
+	drop = "myores:cute_block",
 	on_punch = function(pos, node, player, pointed_thing)
 		minetest.set_node(pos,{name = "myores:cute_block", param2 = node.param2})
 	end,
@@ -586,6 +596,16 @@ minetest.register_node("myores:cute_block2", {
 		minetest.set_node(pos,{name = "myores:cute_block_light2", param2 = node.param2})
 	end,
 })
+core.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:cute_block_light",
+	wherein        = "default:stone",
+	clust_scarcity = 24*24*24,
+	clust_num_ores = 1,
+	clust_size     = 1,
+	y_min     = -31000,
+	y_max     = -50,
+})
 
 minetest.register_node("myores:cute_block_light2", {
 	drawtype = "normal",
@@ -599,7 +619,7 @@ minetest.register_node("myores:cute_block_light2", {
   	paramtype2 = "facedir",
 	light_source = 14,
 	groups = {cracky = 2 , oddly_breakable_by_hand = 1, not_in_creative_inventory = 1},
-	drop = "cutepie:cute_block2",
+	drop = "myores:cute_block2",
 	on_punch = function(pos, node, player, pointed_thing)
 		minetest.set_node(pos,{name = "myores:cute_block2", param2 = node.param2})
 	end,
@@ -612,12 +632,32 @@ core.register_node("myores:cobble_black",{
 	param = "light",
 	groups = {cracky = 2, not_in_creative_inventory = 1},
 })
+core.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:cobble_black",
+	wherein        = "default:stone",
+	clust_scarcity = 16*16*16,
+	clust_num_ores = 8,
+	clust_size     = 3,
+	y_min     = -31000,
+	y_max     = -50,
+})
 core.register_node("myores:cobble_white",{
 	description = "White Cobble",
 	tiles = {"myores_cobble_white.png",},
 	drawtype = "normal",
 	param = "light",
 	groups = {cracky = 2, not_in_creative_inventory = 1},
+})
+core.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:cobble_white",
+	wherein        = "default:stone",
+	clust_scarcity = 16*16*16,
+	clust_num_ores = 8,
+	clust_size     = 3,
+	y_min     = -31000,
+	y_max     = -50,
 })
 --Bouncy Block
 minetest.register_node("myores:bounce_block", {
@@ -628,4 +668,14 @@ minetest.register_node("myores:bounce_block", {
 	groups = {cracky = 3, bouncy = 70, fall_damage_add_percent = -1000, not_in_creative_inventory = 1},
 	sounds = default.node_sound_stone_defaults(),
 
+})
+core.register_ore({
+	ore_type       = "scatter",
+	ore            = "myores:bounce_block",
+	wherein        = "default:stone",
+	clust_scarcity = 16*16*16,
+	clust_num_ores = 3,
+	clust_size     = 3,
+	y_min     = -31000,
+	y_max     = -50,
 })

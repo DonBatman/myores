@@ -129,6 +129,12 @@ local ores_table = {--item, Description, image
 					{"amethyst_splitblock", "Amethyst Splitblock","myores_amethyst_splitblock.png"},
 					{"amethyst_tiles",      "Amethyst Tiles",   	"myores_amethyst_tiles.png"},
 					{"stone_with_amethyst", "Amethyst In Stone",	"default_stone.png^myores_mineral_amethyst.png"},
+					{"aluminum",  		   "Amethyst", 			"myores_amethyst.png"},
+					{"aluminum_block",      "Aluminum Block",   	"myores_aluminum_block.png"},
+					{"aluminum_brick",      "Aluminum Brick",   	"myores_aluminum_brick.png"},
+					{"aluminum_splitblock", "Aluminum Splitblock","myores_aluminum_splitblock.png"},
+					{"aluminum_tiles",      "Aluminum Tiles",   	"myores_aluminum_tiles.png"},
+					{"stone_with_aluminum", "Aluminum In Stone",	"default_stone.png^myores_mineral_aluminum.png"},
 					}
 					
 for i in ipairs(ores_table) do
@@ -212,6 +218,9 @@ minetest.override_item("myores:stone_with_emerald",{
 	groups = {cracky=2,not_in_creative_inventory=1},})
 minetest.override_item("myores:stone_with_amethyst",{
 	drop = "myores:amethyst_lump",
+	groups = {cracky=2,not_in_creative_inventory=1},})
+minetest.override_item("myores:stone_with_aluminum",{
+	drop = "myores:aluminum_lump",
 	groups = {cracky=2,not_in_creative_inventory=1},})
 
 
@@ -307,4 +316,12 @@ minetest.register_craftitem("myores:emerald_lump",{
 minetest.register_craftitem("myores:amethyst_lump",{
 	inventory_image = "myores_amethyst_lump.png",
 	description = "Amethyst Lump",
+})
+minetest.register_craftitem("myores:aluminum_lump",{
+	inventory_image = "myores_aluminum_lump.png",
+	description = "Aluminum Lump",
+})
+minetest.register_craftitem("myores:aluminum_ingot",{
+	inventory_image = "myores_aluminum_ingot.png",
+	description = "Aluminum Ingot",
 })
