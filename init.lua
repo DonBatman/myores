@@ -10,6 +10,8 @@ dofile(core.get_modpath("myores").."/mapgen.lua")
 dofile(core.get_modpath("myores").."/crafting.lua")
 dofile(core.get_modpath("myores").."/tools.lua")
 dofile(core.get_modpath("myores").."/chests.lua")
+dofile(core.get_modpath("myores").."/chests_locked.lua")
+dofile(core.get_modpath("myores").."/chests_crafts.lua")
 dofile(core.get_modpath("myores").."/stairs.lua")
 
 if core.get_modpath("3d_armor") then
