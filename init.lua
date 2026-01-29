@@ -16,6 +16,7 @@ dofile(core.get_modpath("myores").."/stairs.lua")
 
 if core.get_modpath("3d_armor") then
 	dofile(core.get_modpath("myores").."/armor.lua")
+	dofile(core.get_modpath("myores").."/shields.lua")
 end
 
 if fant then
